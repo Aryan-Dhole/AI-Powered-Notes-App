@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Powered Notes App</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+</head>
+
+
+<body class="p-3">
+    <div class="container">
+        <h1 class="text-center mb-4">AI Notes App</h1>
+
+        <!-- Add Note Form -->
+        <div class="row mb-3">
+            <!-- Left side: Title + Tags -->
+            <div class="col-md-4">
+                <div class="form-group mb-2">
+                    <input type="text" class="form-control mb-2" id="noteTitle" placeholder="📝Note Title">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="noteTags" placeholder="🏷️Tags (comma separated)">
+                </div>
+            </div>
+
+            <!-- Right side: Content -->
+            <div class="col-md-8">
+                <div class="form-group">
+                    <textarea class="form-control" id="noteContent" rows="3" placeholder="Note Content"></textarea>
+                </div>
+            </div>
+        </div>
+
+        <!-- Add Note button -->
+        <div class="text-center my-4">
+            <button class="btn btn-primary w-100" id="addNoteBtn">Add Note</button>
+        </div>
+
+    </div>
+
+    <!-- Search -->
+    <div class="row">
+        <input type="text" id="searchInput" class="form-control mb-3 w-75 col-md-6 offset-md-1"
+            placeholder="🔍Search notes by title or tag...">
+    </div>
+    <!-- Notes Display -->
+    <div id="notesContainer" class="row mt-4">
+        <!-- Notes will be displayed here -->
+    </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
